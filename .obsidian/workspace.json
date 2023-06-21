@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Untitled.md",
+                "file": "Notes/Object design.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Untitled.md",
+                "file": "Notes/Object design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Untitled.md",
+                "file": "Notes/Object design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Untitled.md"
+                "file": "Notes/Object design.md"
               }
             }
           }
@@ -157,7 +157,17 @@
   },
   "active": "7e6b42aba67c98d1",
   "lastOpenFiles": [
-    "Notes/Untitled.md",
-    "Untitled"
+    "code-along/bin/code_along/Car.class",
+    "code-along/src/code_along/Car.java",
+    "code-along/bin/code_along/Test.class",
+    "code-along/bin/code_along",
+    "code-along/src/code_along/Test.java",
+    "code-along/src/code_along",
+    "code-along/bin/module-info.class",
+    "code-along/src/module-info.java",
+    "code-along/src",
+    "code-along/bin",
+    "code-along",
+    "Notes/Object design.md"
   ]
 }
