@@ -6,6 +6,11 @@ public class Car {
 	private int year;
 	
 //	Constructor
+	public Car() {
+		this.year = 2023;
+		this.colour = "White";
+	}
+	
 	public Car(String colour, int year) {
 		this.year = year;
 		this.colour = colour;

@@ -4,5 +4,5 @@
 /**
  * 
  */
-module code_along {
+module codeAlong {
 }

@@ -9,14 +9,21 @@ public class MyClass{
 }
 ```
 
-### Class
+### Class: Basics
 * A **class** is a type of data, whereas an object is a piece (instance) of that data
 * A good analogy will be comparing classes to factories and objects to the products produced by the factories
 * Each object can be customised without affecting other objects that belong to the same class
 * **Member Variables**: Variables that exist throughout the class (Declared outside each method but within the definition of the class)
 * **Constructor**:  The method that gets called when an object is created. (Note: it doesn't have a return type)
 * **this**: "this" refers to the calling object. Therefore, if you print car1.year, for example, it will return blue.
-e.g.
+
+### Method overloading
+* An example of polymorphism (poly: many, morph: form)
+* It allows you to create multiple versions of a method that do slightly different thing
+* They must have different parameter list, due to java's compilation process.
+* An example will be default constructor vs parameter constructor. If no arguments are passed to an object's constructor, then the default constructor is used. The parameter constructor is used otherwise.
+
+### Code example 1
 ```java
 // Car.java
 public class Car {
@@ -24,15 +31,20 @@ public class Car {
 	private String colour;
 	private int year;
 	
-//	Constructor
+//	Default constructor
+	public Car() {
+		this.year = 2023;
+		this.colour = "White";
+	}
+
+//	Parameter constructor
 	public Car(String colour, int year) {
 		this.year = year;
 		this.colour = colour;
-	}
 
 // Method that prints out the specification of the car
 	public void getSpec() {
-		System.out.println("Year: " + this.year + "  Coulour: " + this.colour );
+		System.out.println("Year: " + this.year + "  Colour: " + this.colour );
 	}
 }
 
@@ -46,6 +58,6 @@ public class Test {
 	}
 }
 // output: 
-//Year: 1998 Coulour: blue
-//Year: 2014 Coulour: black
+//Year: 1998 Colour: blue
+//Year: 2014 Colour: black
 ```
