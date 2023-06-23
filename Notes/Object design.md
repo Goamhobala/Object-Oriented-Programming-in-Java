@@ -15,15 +15,20 @@ public class MyClass{
 * Each object can be customised without affecting other objects that belong to the same class
 * **Member Variables**: Variables that exist throughout the class (Declared outside each method but within the definition of the class)
 * **Constructor**:  The method that gets called when an object is created. (Note: it doesn't have a return type)
-* **this**: "this" refers to the calling object. Therefore, if you print car1.year, for example, it will return blue.
+* **this**: "this" refers to the calling object. For example, the constructor of Car assigns the value 1998 to the object named car1, which is referred to as "this"
 
 ### Method overloading
 * An example of polymorphism (poly: many, morph: form)
-* It allows you to create multiple versions of a method that do slightly different thing
-* They must have different parameter list, due to java's compilation process.
+* It allows you to create multiple versions of a method that do slightly different things
+* They must have different parameter list (regardless of return type of the method), due to java's compilation process.
 * An example will be default constructor vs parameter constructor. If no arguments are passed to an object's constructor, then the default constructor is used. The parameter constructor is used otherwise.
 
-### Code example 1
+### Public vs Private
+ * The keyword "public" allows access to methods/variables outside of the class, whereas the keyword "private" forbids all access outside the class definition.
+ * Using getter and setter allows more control, e.g. setter allows you to prevent illegal values from being set, like setYear() in the code example below.
+ * Rule of thumb: make member variables private
+ 
+### Code example
 ```java
 // Car.java
 public class Car {
@@ -36,25 +41,42 @@ public class Car {
 		this.year = 2023;
 		this.colour = "White";
 	}
-
-//	Parameter constructor
+	
+// Parameter constructor
 	public Car(String colour, int year) {
 		this.year = year;
 		this.colour = colour;
-
-// Method that prints out the specification of the car
-	public void getSpec() {
-		System.out.println("Year: " + this.year + "  Colour: " + this.colour );
+	}
+	
+// Getters
+	public int getYear() {
+		return this.year;
+	}
+	
+// Setters 
+	public void setYear(int newYear) {
+		if (1885 <= newYear) {
+			this.year = newYear;
+		}
+		else {
+			System.out.println("Car has not been invented yet you dum");
+		}
+	}
+	
+	public void printSpec() {
+		System.out.println("Year: " + this.year + "  Coulour: " + this.colour );
 	}
 }
+
+
 
 // Test.java
 public class Test {
 	public static void main(String args[]) {
 		Car car1 = new Car("blue", 1998);
 		Car car2 = new Car("black", 2014);
-		car1.getSpec();
-		car2.getSpec();
+		car1.printSpec();
+		car2.printSpec();
 	}
 }
 // output: 
