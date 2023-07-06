@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "157d90c28317fb4d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interface and Implementation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -99,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/2. Memory Models.md",
+                "file": "Interface and Implementation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/2. Memory Models.md",
+                "file": "Interface and Implementation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/2. Memory Models.md"
+                "file": "Interface and Implementation.md"
               }
             }
           }
@@ -160,10 +172,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e8e5502804bce79d",
+  "active": "157d90c28317fb4d",
   "lastOpenFiles": [
-    "Notes/1. Object design.md",
     "Notes/2. Memory Models.md",
+    "Interface and Implementation.md",
+    "Notes/1. Object design.md",
     "Pasted image 20230626162116.png",
     "code-along/bin/code_along/MemoryModelPrimative.class",
     "code-along/src/code_along/MemoryModelPrimative.java",

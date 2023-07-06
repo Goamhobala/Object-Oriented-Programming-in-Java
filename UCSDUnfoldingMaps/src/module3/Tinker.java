@@ -8,12 +8,11 @@ public class Tinker extends PApplet {
 	private String backgroundPath;
 
 	public void setup() {
-
-		size(600, 600);
-//		backgroundPath = "D:\\School Stuff\\Computer Science\\Object-oriented-programming-java\\UCSDUnfoldingMaps\\src\\module3\\TaipeiStreet.gif";
-//		backgroundPath2 = "res/Images/TaipeiStreet2.jpg";
-		backgroundPath = "res/Images/TaipeiStreet.gif";
-		backgroundImage = loadImage(backgroundPath, "gif");
+//		size of the window
+		size(1200, 1200);
+		
+//		set up bacground image
+		backgroundImage = loadImage("res/Images/TaipeiStreet.gif", "gif");
 
 	}
 
