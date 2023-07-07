@@ -8,6 +8,7 @@ import java.util.List;
 
 //Processing library
 import processing.core.PApplet;
+import processing.core.PImage;
 
 //Unfolding libraries
 import de.fhpotsdam.unfolding.UnfoldingMap;
@@ -52,6 +53,7 @@ public class EarthquakeCityMap extends PApplet {
 
 	// feed with magnitude 2.5+ Earthquakes
 	private String earthquakesURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.atom";
+	private PImage backgroundImg;
 
 	public void setup() {
 		size(950, 600, OPENGL);
@@ -74,6 +76,10 @@ public class EarthquakeCityMap extends PApplet {
 		// Use provided parser to collect properties for each earthquake
 		// PointFeatures have a getLocation method
 		List<PointFeature> earthquakes = ParseFeed.parseEarthquake(this, earthquakesURL);
+		
+		// background
+		backgroundImg = loadImage("res/Images/TaipeiStreet.gif", "gif");
+		backgroundImg.resize(width, 0);
 
 		// TODO (Step 3): Add a loop here that calls createMarker (see below)
 		// to create a new SimplePointMarker for each PointFeature in
@@ -123,7 +129,7 @@ public class EarthquakeCityMap extends PApplet {
 	}
 
 	public void draw() {
-		background(10);
+		image(backgroundImg, 0, 0);
 		map.draw();
 		addKey();
 	}

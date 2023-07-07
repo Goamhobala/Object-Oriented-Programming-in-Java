@@ -9,7 +9,7 @@ public class Tinker extends PApplet {
 
 	public void setup() {
 //		size of the window
-		size(1200, 1200);
+		size(600, 600);
 		
 //		set up bacground image
 		backgroundImage = loadImage("res/Images/TaipeiStreet.gif", "gif");
