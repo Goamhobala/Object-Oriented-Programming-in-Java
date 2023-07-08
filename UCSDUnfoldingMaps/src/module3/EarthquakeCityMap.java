@@ -19,8 +19,12 @@ import de.fhpotsdam.unfolding.providers.Google;
 import de.fhpotsdam.unfolding.providers.MBTilesMapProvider;
 import de.fhpotsdam.unfolding.utils.MapUtils;
 
+//Customised marker library
+import createMarker.ImageMarker;
+
 //Parsing library
 import parsing.ParseFeed;
+
 
 /**
  * EarthquakeCityMap An application with an interactive map displaying
@@ -54,6 +58,7 @@ public class EarthquakeCityMap extends PApplet {
 	// feed with magnitude 2.5+ Earthquakes
 	private String earthquakesURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.atom";
 	private PImage backgroundImg;
+	private PImage markerImg;
 
 	public void setup() {
 		size(950, 600, OPENGL);
