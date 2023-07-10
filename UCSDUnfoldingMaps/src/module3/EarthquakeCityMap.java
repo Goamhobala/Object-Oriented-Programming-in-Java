@@ -14,6 +14,7 @@ import processing.core.PImage;
 import de.fhpotsdam.unfolding.UnfoldingMap;
 import de.fhpotsdam.unfolding.marker.Marker;
 import de.fhpotsdam.unfolding.data.PointFeature;
+import de.fhpotsdam.unfolding.geo.Location;
 import de.fhpotsdam.unfolding.marker.SimplePointMarker;
 import de.fhpotsdam.unfolding.providers.Google;
 import de.fhpotsdam.unfolding.providers.MBTilesMapProvider;
@@ -39,7 +40,7 @@ public class EarthquakeCityMap extends PApplet {
 	private static final long serialVersionUID = 1L;
 
 	// IF YOU ARE WORKING OFFLINE, change the value of this variable to true
-	private static final boolean offline = false;
+	private static final boolean offline = true;
 
 	// Less than this threshold is a light earthquake
 	public static final float THRESHOLD_MODERATE = 5;
@@ -58,8 +59,10 @@ public class EarthquakeCityMap extends PApplet {
 	// feed with magnitude 2.5+ Earthquakes
 	private String earthquakesURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.atom";
 	private PImage backgroundImg;
-	private PImage markerImg;
-
+	private PImage markerImgLight = loadImage("res/Images/earthquakeMarkerLightSmall.png");
+	private PImage markerImgModerate = loadImage("res/Images/earthquakeMarkerModerateSmall.png");
+	private PImage markerImgStrong = loadImage("res/Images/earthquakeMarkerStrongSmall.png");
+	
 	public void setup() {
 		size(950, 600, OPENGL);
 
@@ -82,14 +85,18 @@ public class EarthquakeCityMap extends PApplet {
 		// PointFeatures have a getLocation method
 		List<PointFeature> earthquakes = ParseFeed.parseEarthquake(this, earthquakesURL);
 		
-		// background
-		backgroundImg = loadImage("res/Images/TaipeiStreet.gif", "gif");
-		backgroundImg.resize(width, 0);
-
 		// TODO (Step 3): Add a loop here that calls createMarker (see below)
 		// to create a new SimplePointMarker for each PointFeature in
 		// earthquakes. Then add each new SimplePointMarker to the
 		// List markers (so that it will be added to the map in the line below)
+		for (PointFeature earthquake : earthquakes) {
+			markers.add((Marker) createImgMarker(earthquake));
+		}
+		
+		// background
+		backgroundImg = loadImage("res/Images/TaipeiStreet.gif", "gif");
+		backgroundImg.resize(width, 0);
+
 
 		// Add the markers to the map so that they are displayed
 		map.addMarkers(markers);
@@ -105,6 +112,35 @@ public class EarthquakeCityMap extends PApplet {
 	 * TODO (Step 4): Add code to this method so that it adds the proper styling to
 	 * each marker based on the magnitude of the earthquake.
 	 */
+	private ImageMarker createImgMarker(PointFeature feature) {
+		// To create an ImageMarker object with the image based on the magnitude of the earthquake
+		Object magObj = feature.getProperty("magnitude");
+		float mag = Float.parseFloat(magObj.toString());
+		String magnitudeClass = magnitudeClassifier(mag);
+		Location earthquakeLocation = feature.getLocation();
+		
+		if (magnitudeClass == "light") {
+			return new ImageMarker(earthquakeLocation, markerImgLight);
+		}else if (magnitudeClass == "moderate"){
+			return new ImageMarker(earthquakeLocation, markerImgModerate);
+		}else {
+			return new ImageMarker(earthquakeLocation, markerImgStrong);
+		}
+		
+	}
+	
+	private String magnitudeClassifier(float magnitude) {
+		if (magnitude <= THRESHOLD_LIGHT) {
+			return "light";
+		}else if (magnitude <= THRESHOLD_MODERATE) {
+			return "moderate";
+		}else {
+			return "strong";
+		}
+		
+	}
+
+// This is the template method provided by UCSD
 	private SimplePointMarker createMarker(PointFeature feature) {
 		// To print all of the features in a PointFeature (so you can see what they are)
 		// uncomment the line below. Note this will only print if you call createMarker

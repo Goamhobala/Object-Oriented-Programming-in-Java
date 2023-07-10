@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/When to use @Override.md",
+                "file": "Notes/1. Object design.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/When to use @Override.md",
+                "file": "Notes/1. Object design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/When to use @Override.md",
+                "file": "Notes/1. Object design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/When to use @Override.md"
+                "file": "Notes/1. Object design.md"
               }
             }
           }
@@ -148,32 +148,33 @@
   },
   "active": "f88dd021b172acb8",
   "lastOpenFiles": [
+    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1688985094102.html",
+    "UCSDUnfoldingMaps/res/Images/earthquakeMarkerLightSmall.jpg",
+    "UCSDUnfoldingMaps/res/Images/ps3A33.tmp",
+    "UCSDUnfoldingMaps/build/module1.HelloWorld1688984902190.html",
+    "UCSDUnfoldingMaps/build/module1.HelloWorld1688984885256.html",
+    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1688984864709.html",
+    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1688984847350.html",
+    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1688984667516.html",
+    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerModerateSmall.png",
+    "UCSDUnfoldingMaps/res/Images/earthquakeMarkerModerateSmall.png",
+    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1688984648028.html",
+    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerStrong.png",
+    "UCSDUnfoldingMaps/res/Images/earthquakeMarkerStrong.png",
+    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerStrongSmall.png",
+    "UCSDUnfoldingMaps/res/Images/earthquakeMarkerStrongSmall.png",
+    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerModerateSmalll.png",
+    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerModerate.png",
+    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerMajorSmall.png",
+    "UCSDUnfoldingMaps/res/Images/psAF7D.tmp",
+    "UCSDUnfoldingMaps/res/Images/ps7002.tmp",
+    "UCSDUnfoldingMaps/res/Images/ps3E62.tmp",
     "Notes/When to use @Override.md",
     "Notes/Interface and Implementation.md",
     "Notes/2. Memory Models.md",
     "Notes/1. Object design.md",
     "Interface and Implementation.md",
-    "Pasted image 20230626162116.png",
-    "code-along/bin/code_along/MemoryModelPrimative.class",
-    "code-along/src/code_along/MemoryModelPrimative.java",
-    "code-along/bin/code_along/TestMemoryModelPrimative.class",
-    "code-along/src/code_along/TestMemoryModelPrimative.java",
-    "code-along/src/code_along/TestCar.java",
-    "code-along/bin/code_along/TestCar.class",
     "Notes/Object design.md",
-    "Notes/New folder",
-    "Notes/week 1 slides/Support_ Setting Up and Running Examples in Eclipse.pdf",
-    "Notes/week 1 slides/Support- Putting it all Together Part 2.pdf",
-    "Notes/week 1 slides/Support- Putting it all Together Part 1.pdf",
-    "Object-Oriented-Programming-in-Java/code-along/unfolding_app_template_with_examples_0.9.6/data/ui/unfolding-mini-icon.png",
-    "Object-Oriented-Programming-in-Java/code-along/unfolding_app_template_with_examples_0.9.6/data/ui/marker_red.png",
-    "Object-Oriented-Programming-in-Java/code-along/unfolding_app_template_with_examples_0.9.6/data/ui/markerStyleGuide.png",
-    "Object-Oriented-Programming-in-Java/code-along/unfolding_app_template_with_examples_0.9.6/data/ui/marker_gray.png",
-    "Object-Oriented-Programming-in-Java/code-along/unfolding_app_template_with_examples_0.9.6/data/ui/marker.png",
-    "Object-Oriented-Programming-in-Java/code-along/unfolding_app_template_with_examples_0.9.6/data/ui/compass_white.png",
-    "Object-Oriented-Programming-in-Java/code-along/unfolding_app_template_with_examples_0.9.6/data/ui/compass_grey.png",
-    "Object-Oriented-Programming-in-Java/code-along/unfolding_app_template_with_examples_0.9.6/data/test/test800x600.png",
-    "Object-Oriented-Programming-in-Java/code-along/unfolding_app_template_with_examples_0.9.6/data/test/sprite-pink.png",
     "Object-Oriented-Programming-in-Java/Notes/Object design.md"
   ]
 }
