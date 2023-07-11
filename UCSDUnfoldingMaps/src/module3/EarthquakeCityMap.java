@@ -17,6 +17,7 @@ import de.fhpotsdam.unfolding.data.PointFeature;
 import de.fhpotsdam.unfolding.geo.Location;
 import de.fhpotsdam.unfolding.marker.SimplePointMarker;
 import de.fhpotsdam.unfolding.providers.Google;
+import de.fhpotsdam.unfolding.providers.OpenStreetMap;
 import de.fhpotsdam.unfolding.providers.MBTilesMapProvider;
 import de.fhpotsdam.unfolding.utils.MapUtils;
 
@@ -40,10 +41,10 @@ public class EarthquakeCityMap extends PApplet {
 	private static final long serialVersionUID = 1L;
 
 	// IF YOU ARE WORKING OFFLINE, change the value of this variable to true
-	private static final boolean offline = true;
+	private static final boolean offline = false;
 
 	// Less than this threshold is a light earthquake
-	public static final double THRESHOLD_MODERATE = 5.5;
+	public static final float THRESHOLD_MODERATE = 5.5f;
 	// Less than this threshold is a minor earthquake
 	public static final float THRESHOLD_LIGHT = 4;
 
@@ -79,7 +80,7 @@ public class EarthquakeCityMap extends PApplet {
 			map = new UnfoldingMap(this, 200, 50, 700, 500, new MBTilesMapProvider(mbTilesString));
 			earthquakesURL = "2.5_week.atom"; // Same feed, saved Aug 7, 2015, for working offline
 		} else {
-			map = new UnfoldingMap(this, 200, 50, 700, 500, new Google.GoogleMapProvider());
+			map = new UnfoldingMap(this, 200, 50, 700, 500, new OpenStreetMap.OpenStreetMapProvider());
 			// IF YOU WANT TO TEST WITH A LOCAL FILE, uncomment the next line
 			// earthquakesURL = "2.5_week.atom";
 		}
@@ -189,7 +190,6 @@ public class EarthquakeCityMap extends PApplet {
 	}
 
 	// helper method to draw key in GUI
-	// TODO: Implement this method to draw the key
 	private void addKey() {
 		// Remember you can use Processing's graphics methods here
 		fill(color(235, 64, 52));
