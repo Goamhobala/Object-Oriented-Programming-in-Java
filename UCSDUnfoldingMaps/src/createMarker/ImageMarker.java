@@ -16,9 +16,10 @@ public class ImageMarker extends AbstractMarker{
 @Override
 	public void draw(PGraphics pg, float x , float y) {
 //		x and y are calculated internally by the unfoldingmap library based on
-//		the location provided.
+//		the location provided. 
 		pg.pushStyle();
-		pg.image(sourceImage, x + sourceImage.width / 2 , y + sourceImage.height);
+//      Move the upper left corner so that the marker's bottom middle is placed at the exact coordinate
+		pg.image(sourceImage, x - sourceImage.width / 2 , y - sourceImage.height);
 		pg.popStyle();
 		
 	}
