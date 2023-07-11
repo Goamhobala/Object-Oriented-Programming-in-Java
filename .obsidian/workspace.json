@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/1. Object design.md",
+                "file": "Notes/Interface and Implementation.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/1. Object design.md",
+                "file": "Notes/Interface and Implementation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/1. Object design.md",
+                "file": "Notes/Interface and Implementation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/1. Object design.md"
+                "file": "Notes/Interface and Implementation.md"
               }
             }
           }
@@ -148,31 +148,32 @@
   },
   "active": "f88dd021b172acb8",
   "lastOpenFiles": [
-    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1688985635991.html",
-    "UCSDUnfoldingMaps/res/Images/ps30F6.tmp",
-    "UCSDUnfoldingMaps/res/Images/psAB1C.tmp",
-    "UCSDUnfoldingMaps/res/Images/ps29F4.tmp",
-    "UCSDUnfoldingMaps/res/Images/psB1.tmp",
-    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1688985511724.html",
-    "UCSDUnfoldingMaps/res/Images/ps5F01.tmp",
-    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1688985496842.html",
-    "UCSDUnfoldingMaps/res/Images/ps25DF.tmp",
-    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1688985094102.html",
-    "UCSDUnfoldingMaps/res/Images/earthquakeMarkerLightSmall.jpg",
-    "UCSDUnfoldingMaps/res/Images/ps3A33.tmp",
-    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerModerateSmall.png",
-    "UCSDUnfoldingMaps/res/Images/earthquakeMarkerModerateSmall.png",
-    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerStrong.png",
-    "UCSDUnfoldingMaps/res/Images/earthquakeMarkerStrong.png",
+    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1689065360701.html",
+    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1689065348130.html",
+    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1689065323698.html",
+    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1689065290229.html",
+    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1689065269197.html",
+    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1689065236805.html",
+    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1689065227270.html",
+    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1689065217764.html",
+    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1689065205468.html",
+    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1689065183129.html",
+    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1689065157178.html",
+    "UCSDUnfoldingMaps/build/res/Images/TaipeiStreet2.jpg",
+    "UCSDUnfoldingMaps/build/res/Images/TaipeiStreet.gif",
+    "UCSDUnfoldingMaps/build/res/Images/Taipei101.gif",
     "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerStrongSmall.png",
-    "UCSDUnfoldingMaps/res/Images/earthquakeMarkerStrongSmall.png",
-    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerModerateSmalll.png",
+    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerStrongKey.png",
+    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerStrong.png",
+    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerModerateSmall.png",
+    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerModerateKey.png",
     "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerModerate.png",
-    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerMajorSmall.png",
+    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerLightSmall.png",
+    "Notes/Why is string comparison a bad practice in java.md",
+    "Notes/1. Object design.md",
     "Notes/When to use @Override.md",
     "Notes/Interface and Implementation.md",
     "Notes/2. Memory Models.md",
-    "Notes/1. Object design.md",
     "Interface and Implementation.md",
     "Notes/Object design.md",
     "Object-Oriented-Programming-in-Java/Notes/Object design.md"

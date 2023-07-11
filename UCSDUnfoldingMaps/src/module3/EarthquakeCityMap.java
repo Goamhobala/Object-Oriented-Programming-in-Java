@@ -8,8 +8,8 @@ import java.util.List;
 
 //Processing library
 import processing.core.PApplet;
+import processing.core.PFont;
 import processing.core.PImage;
-
 //Unfolding libraries
 import de.fhpotsdam.unfolding.UnfoldingMap;
 import de.fhpotsdam.unfolding.marker.Marker;
@@ -43,7 +43,7 @@ public class EarthquakeCityMap extends PApplet {
 	private static final boolean offline = true;
 
 	// Less than this threshold is a light earthquake
-	public static final float THRESHOLD_MODERATE = 5;
+	public static final double THRESHOLD_MODERATE = 5.5;
 	// Less than this threshold is a minor earthquake
 	public static final float THRESHOLD_LIGHT = 4;
 
@@ -59,13 +59,22 @@ public class EarthquakeCityMap extends PApplet {
 	// feed with magnitude 2.5+ Earthquakes
 	private String earthquakesURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.atom";
 	private PImage backgroundImg;
-	private PImage markerImgLight = loadImage("res/Images/earthquakeMarkerLightSmall.png");
-	private PImage markerImgModerate = loadImage("res/Images/earthquakeMarkerModerateSmall.png");
-	private PImage markerImgStrong = loadImage("res/Images/earthquakeMarkerStrongSmall.png");
+	private PImage markerImgLight = loadImage("res/images/earthquakeMarkerLightSmall.png");
+	private PImage markerImgModerate = loadImage("res/images/earthquakeMarkerModerateSmall.png");
+	private PImage markerImgStrong = loadImage("res/images/earthquakeMarkerStrongSmall.png");
+	private PImage markerImgLightKey = loadImage("res/images/earthquakeMarkerLightKey.png");
+	private PImage markerImgModerateKey = loadImage("res/images/earthquakeMarkerModerateKey.png");
+	private PImage markerImgStrongKey = loadImage("res/images/earthquakeMarkerStrongKey.png");
+	private PFont pixelFont;
 	
 	public void setup() {
 		size(950, 600, OPENGL);
-
+		
+		// Load images and fonts
+		pixelFont = createFont("res/fonts/Pixeltype.ttf", 32);
+		textFont(pixelFont);
+		
+		
 		if (offline) {
 			map = new UnfoldingMap(this, 200, 50, 700, 500, new MBTilesMapProvider(mbTilesString));
 			earthquakesURL = "2.5_week.atom"; // Same feed, saved Aug 7, 2015, for working offline
@@ -74,6 +83,7 @@ public class EarthquakeCityMap extends PApplet {
 			// IF YOU WANT TO TEST WITH A LOCAL FILE, uncomment the next line
 			// earthquakesURL = "2.5_week.atom";
 		}
+	
 
 		map.zoomToLevel(2);
 		MapUtils.createDefaultEventDispatcher(this, map);
@@ -96,6 +106,8 @@ public class EarthquakeCityMap extends PApplet {
 		// background
 		backgroundImg = loadImage("res/Images/TaipeiStreet.gif", "gif");
 		backgroundImg.resize(width, 0);
+		
+		
 
 
 		// Add the markers to the map so that they are displayed
@@ -119,9 +131,9 @@ public class EarthquakeCityMap extends PApplet {
 		String magnitudeClass = magnitudeClassifier(mag);
 		Location earthquakeLocation = feature.getLocation();
 		
-		if (magnitudeClass == "light") {
+		if (magnitudeClass.equals("light")) {
 			return new ImageMarker(earthquakeLocation, markerImgLight);
-		}else if (magnitudeClass == "moderate"){
+		}else if (magnitudeClass.equals("moderate")){
 			return new ImageMarker(earthquakeLocation, markerImgModerate);
 		}else {
 			return new ImageMarker(earthquakeLocation, markerImgStrong);
@@ -130,6 +142,7 @@ public class EarthquakeCityMap extends PApplet {
 	}
 	
 	private String magnitudeClassifier(float magnitude) {
+		// Classify earthquakes into three categories based on their magnitudes
 		if (magnitude <= THRESHOLD_LIGHT) {
 			return "light";
 		}else if (magnitude <= THRESHOLD_MODERATE) {
@@ -179,6 +192,17 @@ public class EarthquakeCityMap extends PApplet {
 	// TODO: Implement this method to draw the key
 	private void addKey() {
 		// Remember you can use Processing's graphics methods here
+		fill(color(235, 64, 52));
+		rect(50, 50, 100, 500);
+		fill(255);
+		image(markerImgLightKey, 67, 100);
+		text("Light", 77, 200);
+		image(markerImgModerateKey, 67, 265);
+		text("Moderate", 55, 365);
+		image(markerImgStrongKey, 67, 416);
+		text("Strong", 68, 516);
+		
+		
 
 	}
 }
