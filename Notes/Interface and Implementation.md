@@ -6,6 +6,7 @@
 * Interface defines a collection of abstract methods (the method signatures), which define the method's name, return type, and parameters, but not the body.
 * More like a skeleton for classes
 * Interfaces thereby achieve abstraction, code-reusability, and flexible design (e.g. polymorphism)
+* Can extend another interface [[Inheritance]]
 
 ### Implementation
 * Essentially fill up the skeleton provided by the interface

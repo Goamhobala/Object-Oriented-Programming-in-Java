@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Inheritance.md",
+                "file": "Notes/1. Object design.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ef2228e567efee06",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/1. Object design.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Inheritance.md",
+                "file": "Notes/1. Object design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Inheritance.md",
+                "file": "Notes/1. Object design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Inheritance.md"
+                "file": "Notes/1. Object design.md"
               }
             }
           }
@@ -146,8 +159,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f88dd021b172acb8",
+  "active": "ef2228e567efee06",
   "lastOpenFiles": [
+    "Notes/super() and this().md",
+    "Notes/When to use @Override.md",
+    "Notes/Why is string comparison a bad practice in java.md",
+    "Notes/Class construction.md",
+    "Notes/1. Object design.md",
+    "Notes/Inheritance.md",
+    "Notes/2. Memory Models.md",
+    "Notes/Visibility Modifiers.md",
+    "Pasted image 20230712101320.png",
+    "bin/Notes/1. Object design.md",
+    "Notes/Interface and Implementation.md",
     "code-along/src/codeExamples/ToyotaPrius.java",
     "code-along/src/codeExamples/NewToyotaPrius.java",
     "code-along/src/codeExamples/Car.java",
@@ -163,19 +187,11 @@
     "UCSDUnfoldingMaps/res/Images/earthquakeMarkerLightSmall.png",
     "UCSDUnfoldingMaps/res/Images/earthquakeMarkerLightKey.png",
     "UCSDUnfoldingMaps/res/Images/earthquakeMarkerLight.png",
-    "Notes/Why is string comparison a bad practice in java.md",
-    "Pasted image 20230711161027.png",
-    "Notes/When to use @Override.md",
-    "Notes/Inheritance.md",
-    "Notes/Interface and Implementation.md",
-    "Notes/2. Memory Models.md",
-    "Notes/1. Object design.md",
     "Interface and Implementation.md",
     "code-along/bin/code_along/MemoryModelPrimative.class",
     "code-along/src/code_along/MemoryModelPrimative.java",
     "code-along/bin/code_along/TestMemoryModelPrimative.class",
     "code-along/src/code_along/TestMemoryModelPrimative.java",
-    "code-along/src/code_along/TestCar.java",
     "Notes/Object design.md",
     "Object-Oriented-Programming-in-Java/Notes/Object design.md"
   ]
