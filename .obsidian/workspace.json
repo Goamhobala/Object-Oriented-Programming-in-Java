@@ -25,6 +25,18 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Notes/Interface and Implementation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cbbd4394fd927eb9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Notes/1. Object design.md",
                 "mode": "source",
                 "source": false
@@ -32,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -159,39 +171,42 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ef2228e567efee06",
+  "active": "cbbd4394fd927eb9",
   "lastOpenFiles": [
-    "Notes/super() and this().md",
-    "Notes/When to use @Override.md",
-    "Notes/Why is string comparison a bad practice in java.md",
     "Notes/Class construction.md",
-    "Notes/1. Object design.md",
     "Notes/Inheritance.md",
-    "Notes/2. Memory Models.md",
+    "Notes/Compile time rule and runtime rule for polymorphism.md",
+    "Notes/Abstract class vs Interface.md",
+    "Notes/Interface and Implementation.md",
+    "Notes/super() and this().md",
+    "Notes/Why is string comparison a bad practice in java.md",
+    "Notes/When to use @Override.md",
+    "Notes/1. Object design.md",
+    "Default methods in interfaces vs non-abstract methods in abstract classes.md",
+    "code-along/bin/codeExamplesSuperThis/Main.class",
+    "code-along/src/codeExamplesSuperThis/Main.java",
+    "code-along/bin/codeExamplesSuperThis/Student.class",
+    "code-along/src/codeExamplesSuperThis/Student.java",
+    "code-along/bin/codeExamplesSuperThis/Person.class",
+    "code-along/src/codeExamplesSuperThis/Person.java",
+    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1689243687379.html",
+    "UCSDUnfoldingMaps/build/module3.EarthquakeCityMap1689243647817.html",
+    "UCSDUnfoldingMaps/build/res/fonts/Pixeltype.ttf",
+    "UCSDUnfoldingMaps/build/res/fonts",
+    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerStrongSmall.png",
+    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerStrongKey.png",
+    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerStrong.png",
+    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerModerateSmall.png",
+    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerModerateKey.png",
+    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerModerate.png",
+    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerLightSmall.png",
+    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerLightKey.png",
+    "UCSDUnfoldingMaps/build/res/Images/earthquakeMarkerLight.png",
     "Notes/Visibility Modifiers.md",
+    "Notes/2. Memory Models.md",
     "Pasted image 20230712101320.png",
     "bin/Notes/1. Object design.md",
-    "Notes/Interface and Implementation.md",
-    "code-along/src/codeExamples/ToyotaPrius.java",
-    "code-along/src/codeExamples/NewToyotaPrius.java",
-    "code-along/src/codeExamples/Car.java",
-    "code-along/src/codeExamples",
-    "UCSDUnfoldingMaps/res/fonts/Pixeltype.ttf",
-    "UCSDUnfoldingMaps/res/fonts",
-    "UCSDUnfoldingMaps/res/Images/earthquakeMarkerStrongSmall.png",
-    "UCSDUnfoldingMaps/res/Images/earthquakeMarkerStrongKey.png",
-    "UCSDUnfoldingMaps/res/Images/earthquakeMarkerStrong.png",
-    "UCSDUnfoldingMaps/res/Images/earthquakeMarkerModerateSmall.png",
-    "UCSDUnfoldingMaps/res/Images/earthquakeMarkerModerateKey.png",
-    "UCSDUnfoldingMaps/res/Images/earthquakeMarkerModerate.png",
-    "UCSDUnfoldingMaps/res/Images/earthquakeMarkerLightSmall.png",
-    "UCSDUnfoldingMaps/res/Images/earthquakeMarkerLightKey.png",
-    "UCSDUnfoldingMaps/res/Images/earthquakeMarkerLight.png",
     "Interface and Implementation.md",
-    "code-along/bin/code_along/MemoryModelPrimative.class",
-    "code-along/src/code_along/MemoryModelPrimative.java",
-    "code-along/bin/code_along/TestMemoryModelPrimative.class",
-    "code-along/src/code_along/TestMemoryModelPrimative.java",
     "Notes/Object design.md",
     "Object-Oriented-Programming-in-Java/Notes/Object design.md"
   ]

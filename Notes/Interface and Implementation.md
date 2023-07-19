@@ -7,6 +7,7 @@
 * More like a skeleton for classes
 * Interfaces thereby achieve abstraction, code-reusability, and flexible design (e.g. polymorphism)
 * Can extend another interface [[Inheritance]]
+* Note: Interfaces can provide static methods (methods that are associated with the class/interface itself, rather than the instances and cannot be overridden by the implementing classes. For example, objectsCollide (GameObj obj1, GameObj obj2) in the interface GameObj; default methods (the default implementation, which can be overridden by the implementing classes); private methods, though not included in the contract, they can serve as helper methods for the default and static methods. Private methods can be both static and non-static. Private static methods can only be called by other static methods whereas non-static methods can be called by both static and non-static methods.
 
 ### Implementation
 * Essentially fill up the skeleton provided by the interface
